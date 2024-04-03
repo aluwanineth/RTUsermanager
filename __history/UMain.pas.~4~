@@ -1,0 +1,38 @@
+unit UMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, UUser, ULoginActivity;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    ActiveUser1: TMenuItem;
+    rackLogin1: TMenuItem;
+    procedure ActiveUser1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.ActiveUser1Click(Sender: TObject);
+begin
+    FrmUser := TFrmUser.Create(Application);
+    try
+      FrmUser.ShowModal;
+    finally
+      FrmUser.Free;
+    end;
+end;
+
+end.

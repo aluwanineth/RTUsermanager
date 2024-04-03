@@ -1,0 +1,196 @@
+object FrmUser: TFrmUser
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Users'
+  ClientHeight = 609
+  ClientWidth = 1285
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 15
+  object cxGrid1: TcxGrid
+    Left = 0
+    Top = 0
+    Width = 1285
+    Height = 609
+    Align = alClient
+    PopupMenu = PopupMenu1
+    TabOrder = 0
+    ExplicitLeft = 448
+    ExplicitTop = 208
+    ExplicitWidth = 250
+    ExplicitHeight = 200
+    object cxGrid1DBTableView1: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      ScrollbarAnnotations.CustomAnnotations = <>
+      DataController.DataSource = DataSource1
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      OptionsSelection.CellSelect = False
+      object cxGrid1DBTableView1Column9: TcxGridDBColumn
+        DataBinding.FieldName = 'Id'
+      end
+      object cxGrid1DBTableView1Column1: TcxGridDBColumn
+        Caption = 'First Name'
+        DataBinding.FieldName = 'FirstName'
+        Width = 132
+      end
+      object cxGrid1DBTableView1Column2: TcxGridDBColumn
+        DataBinding.FieldName = 'Surname'
+        Width = 158
+      end
+      object cxGrid1DBTableView1Column3: TcxGridDBColumn
+        DataBinding.FieldName = 'CompanyName'
+        Width = 196
+      end
+      object cxGrid1DBTableView1Column4: TcxGridDBColumn
+        DataBinding.FieldName = 'AccNo'
+        Width = 125
+      end
+      object cxGrid1DBTableView1Column5: TcxGridDBColumn
+        DataBinding.FieldName = 'Email'
+        Width = 157
+      end
+      object cxGrid1DBTableView1Column6: TcxGridDBColumn
+        DataBinding.FieldName = 'ContactTelNo'
+      end
+      object cxGrid1DBTableView1Column7: TcxGridDBColumn
+        DataBinding.FieldName = 'MemberType'
+        Width = 113
+      end
+      object cxGrid1DBTableView1Column8: TcxGridDBColumn
+        DataBinding.FieldName = 'Status'
+        Width = 65
+      end
+      object cxGrid1DBTableView1Column10: TcxGridDBColumn
+        DataBinding.FieldName = 'Code'
+        Width = 376
+      end
+      object cxGrid1DBTableView1Column11: TcxGridDBColumn
+        DataBinding.FieldName = 'UserId'
+      end
+      object cxGrid1DBTableView1Column12: TcxGridDBColumn
+        Caption = 'Edit'
+        PropertiesClassName = 'TcxButtonEditProperties'
+        Properties.Buttons = <
+          item
+            Caption = 'Edit'
+            Default = True
+            Glyph.SourceDPI = 96
+            Glyph.Data = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              610000001974455874536F6674776172650041646F626520496D616765526561
+              647971C9653C00000013744558745469746C65005461626C653B466F726D6174
+              3BEEACCAE3000002B349444154785E85926F48956718C67FCFFBE784D88C73F4
+              38CE6665C64116B83F6D945F1483881284091BA34F456BEB43CC0FD22008FCB0
+              8D82DA87C6289B6EB2898233C336D8C436B5E9B4DA87ADD188A58343E599A566
+              9D3F74F49CF77DEE69EFCB8164633FB8B878E0E6BAEE1B1E059880C17FA3C883
+              F872651900EBDDD323C3CA306B119027124F5A10BC7745C001D18880E3E6463F
+              38D2B013C801585AABDA37EBABF0C6E1D6D43C95D112BF58B83939C7C1BA4DF9
+              3D4E9EB9540B98F9805CD64510E6D2391021762F492852849FC7ED99248EE322
+              286CCBA0BC2C08602AA54C40D4DE0F07E5D5AA8DDCB99F4294E09DE23B1E2FAF
+              D3084255E5733C7898A4B8FB78FBDA80FDC68DC189435636EBB0E58552C2EBD7
+              8128AE5E8B515D5D8E1285208C5F89D158FF0AB669A0D0FC76EA2BC2E1E03B25
+              353BB8F5FD4FADC6CA0988207E9DE37AD55E276857639906AE9BE37AEB092289
+              694AEB7632D6F60503F1E96F557DF305D9BE2DFAE4D63C7881026CAD08B13562
+              91BAD446E9749CE89ED719FDBC839E81E1DE1F5CE76D0EBDDF258F924B32B790
+              91D9659DF9726CC597B5280B894519BDFAA7F4B475C8D8C72725D1D329FDBB76
+              48A3615E0C4111601839C7F556C5438BA00C85650AB9A50CB15F4678E6F92815
+              079A681FF895F61F2F5F18D1EEBE0548EF016D6532E9B1A663DD35080842D1DA
+              0206872CF4EC4D8CEB9DD80B9354BD35C9479F8ED277C5EC4F611F5C249B1211
+              5DA714008540100801C5C0B3FB5F2A6C38BF7FF3E3A9EFDE9389967239B73B24
+              25154D5D66201C040CFFB7F21A8088E40598B51BD66CF8AC21FC777CE2A824A6
+              BAE46C4D8134BF1898F5C38D55F3583C8DBD7BA3FD4974DB9648E26E9ABE96C3
+              CC241DE2297D02488B886615AB03F4EFD399BEBF3AC76D839FCB965CFE985F92
+              DE81B81E02B24A29FE2F20F775CC3D0F7C0318800B647D17FE857F00273C6EB6
+              B34173A40000000049454E44AE426082}
+            Kind = bkEllipsis
+          end>
+        HeaderGlyph.SourceDPI = 96
+        HeaderGlyph.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          6100000025744558745469746C6500436C6561723B45726173653B52656D6F76
+          653B426172733B526962626F6E3B878083730000027C49444154785EA5916D48
+          535118C76F3ADDCC46567E308922CB4C9170A691961A4C918DA052D05E2C5748
+          362DCD8C9A9A56BE52A894647EC9966D830A254CD7B4146A443170E6CB6C335F
+          6A628911A4CE5B98B57FE75EBCB2B420E8811FCFE11C7EFF07CE43FD632D2138
+          137804A74582FEF81EEA7DD949EA5D493A355C92460D15CBA9C1223935507882
+          935D8C0A59656FDE3163B33C7E171364CA394AF52A64145B6DC9520AC04238D9
+          D5909D74DB6E1B0008E6E2745A9324896642D977A6AA0B2AFE26F35F64242A7F
+          4E5840EB6A09B7609FEC474F69269D1FEC17CB84B301D99A377F9205EDA97177
+          7E7C36817E54836902DD5483D9D10EBC4D96E28178EBD7AC8075522E60A1ECA6
+          93EDAE9B1D7B0D5B4315A61BAE13AAF07DF825068E4830785802F3C158DC08F6
+          9D6003B254264779E9C3FD317767460CB0DD2B2754B07DC6F20CFD89D1E84F10
+          13A2A19784E1928FB79E0D38A5ECE2647759659BAAC73A8E29551926D5656CFF
+          D6D58ABEBD917344411F138ACBEBBD7AB6B8F37DB84D3A31F2A12B3AF5F3111A
+          F9CDE368B9AFC5A4B210B4A111DD645AB7349CF470B44705E1C21ACF5E7F81AB
+          2FB3096EF2B284E226CDD3A12956E6B07676A3531C022381E94FC20271DECBC3
+          E4C7E76D725CA3605F417D6D93F9CB6FB2DAF80991795A942665A3234A849650
+          7F9CF514F66D74E1F97132B9A79812C615B5DA721B3FCECBB5AFC61091FB98A0
+          65C98B97E3F40AF7BE0D3CE7CDCCEE39990B1044A45C531C28D7DBCFD55B7153
+          3F8A1D395AEC9C23EC4C0344C9D596D5C255018E3207F7814251C2C5B4C80CF5
+          87F0740DB6CB55D8965A879014E56C60E255DDF2B541F39333DD5C28471CB7E0
+          465849F0227833CC9D3D1C3F6C1100FE8B5F5E8AB24DCA40F5DB000000004945
+          4E44AE426082}
+      end
+    end
+    object cxGrid1Level1: TcxGridLevel
+      GridView = cxGrid1DBTableView1
+    end
+  end
+  object QryUser: TADOQuery
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT [Id]'
+      '      ,[FirstName]'
+      '      ,[Surname]'
+      '      ,[Email]'
+      '      ,[CompanyName]'
+      '      ,[AccNo]'
+      '      ,[MemberType]'
+      '      ,[Status]'
+      '      ,[ContactTelNo]'
+      '      ,[UserId]'
+      '      ,[Code]'
+      '  FROM [RTWebAPI].[dbo].[Customers]'
+      '  order by status desc')
+    Left = 808
+    Top = 304
+  end
+  object DataSource1: TDataSource
+    DataSet = QryUser
+    Left = 624
+    Top = 184
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 416
+    Top = 344
+    object Edit1: TMenuItem
+      Caption = 'Edit'
+    end
+    object Edit2: TMenuItem
+      Caption = 'Delete'
+      OnClick = Edit2Click
+    end
+  end
+  object cxGridPopupMenu1: TcxGridPopupMenu
+    PopupMenus = <
+      item
+        GridView = cxGrid1DBTableView1
+        HitTypes = []
+        Index = 0
+        PopupMenu = PopupMenu1
+      end>
+    Left = 1024
+    Top = 312
+  end
+end

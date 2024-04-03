@@ -1,0 +1,17 @@
+program prjUserManagement;
+
+uses
+  Vcl.Forms,
+  UMain in 'UMain.pas' {Form1},
+  UUser in 'UUser.pas' {FrmUser},
+  ConnectionModule in 'ConnectionModule.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmUser, FrmUser);
+  Application.Run;
+end.
